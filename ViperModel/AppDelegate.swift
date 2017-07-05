@@ -18,10 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-    appStartupHandler.appDidStart()
-    self.window = appStartupHandler.mainWindow
+	window = UIWindow(frame: UIScreen.main.bounds)
 
-    return true
+	appStartupHandler.appDidStart()
+
+	return true
   }
 
   func applicationWillResignActive(_ application: UIApplication) {

@@ -1,5 +1,5 @@
 //
-//  dataObtainerClass.swift
+//  DataObtainerClass.swift
 //  testProject
 //
 //  Created by Nolan Lapham on 6/30/17.

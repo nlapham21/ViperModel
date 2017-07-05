@@ -11,17 +11,15 @@ import UIKit
 
 final class AppStartupHandler {
 
-  public var mainWindow: UIWindow
-  private var topLevelFlow = TopLevelFlow()
+	private var topLevelFlow = TopLevelFlow()
 
-  init() {
-    mainWindow = UIWindow(frame:UIScreen.main.bounds)
+	init() {
+		self.appDidStart()
+	}
 
-    self.appDidStart()
-  }
-
-  func appDidStart() {
-    mainWindow.makeKeyAndVisible()
-    topLevelFlow.showHome()
-  }
+	// Initialize the shared ContactsProcurer to retrieve all the data early in the apps lifecycle
+	func appDidStart() {
+		let _ = DataObtainer()
+		topLevelFlow.showHome()
+	}
 }

@@ -11,7 +11,7 @@
 		98ED89661F06AA3100F82666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98ED89651F06AA3100F82666 /* Assets.xcassets */; };
 		98ED89691F06AA3100F82666 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98ED89671F06AA3100F82666 /* LaunchScreen.storyboard */; };
 		98ED89741F06AA3100F82666 /* ViperModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ED89731F06AA3100F82666 /* ViperModelTests.swift */; };
-		98ED89811F06AA7100F82666 /* dataObtainerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ED89801F06AA7100F82666 /* dataObtainerClass.swift */; };
+		98ED89811F06AA7100F82666 /* DataObtainerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ED89801F06AA7100F82666 /* DataObtainerClass.swift */; };
 		98ED89881F06AA7B00F82666 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ED89821F06AA7B00F82666 /* Interactor.swift */; };
 		98ED89891F06AA7B00F82666 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ED89831F06AA7B00F82666 /* Module.swift */; };
 		98ED898A1F06AA7B00F82666 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ED89841F06AA7B00F82666 /* Presenter.swift */; };
@@ -41,7 +41,7 @@
 		98ED896F1F06AA3100F82666 /* ViperModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98ED89731F06AA3100F82666 /* ViperModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperModelTests.swift; sourceTree = "<group>"; };
 		98ED89751F06AA3100F82666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98ED89801F06AA7100F82666 /* dataObtainerClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = dataObtainerClass.swift; path = Data/dataObtainerClass.swift; sourceTree = "<group>"; };
+		98ED89801F06AA7100F82666 /* DataObtainerClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataObtainerClass.swift; path = Data/DataObtainerClass.swift; sourceTree = "<group>"; };
 		98ED89821F06AA7B00F82666 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Interactor.swift; path = "VIPER Module/Interactor.swift"; sourceTree = "<group>"; };
 		98ED89831F06AA7B00F82666 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Module.swift; path = "VIPER Module/Module.swift"; sourceTree = "<group>"; };
 		98ED89841F06AA7B00F82666 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Presenter.swift; path = "VIPER Module/Presenter.swift"; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 		98ED897E1F06AA5E00F82666 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				98ED89801F06AA7100F82666 /* dataObtainerClass.swift */,
+				98ED89801F06AA7100F82666 /* DataObtainerClass.swift */,
 			);
 			name = data;
 			sourceTree = "<group>";
@@ -123,9 +123,9 @@
 		98ED897F1F06AA6300F82666 /* VIPER module */ = {
 			isa = PBXGroup;
 			children = (
-				98ED89821F06AA7B00F82666 /* Interactor.swift */,
 				98ED89831F06AA7B00F82666 /* Module.swift */,
 				98ED89841F06AA7B00F82666 /* Presenter.swift */,
+				98ED89821F06AA7B00F82666 /* Interactor.swift */,
 				98ED89851F06AA7B00F82666 /* ViewController.swift */,
 				98ED89861F06AA7B00F82666 /* ViewController.xib */,
 				98ED89871F06AA7B00F82666 /* ViewModel.swift */,
@@ -242,7 +242,7 @@
 				98ED89881F06AA7B00F82666 /* Interactor.swift in Sources */,
 				98ED89891F06AA7B00F82666 /* Module.swift in Sources */,
 				98ED89911F06AA8800F82666 /* TopLevelFlow.swift in Sources */,
-				98ED89811F06AA7100F82666 /* dataObtainerClass.swift in Sources */,
+				98ED89811F06AA7100F82666 /* DataObtainerClass.swift in Sources */,
 				98ED89901F06AA8800F82666 /* AppStartupHandler.swift in Sources */,
 				98ED895F1F06AA3100F82666 /* AppDelegate.swift in Sources */,
 				98ED898A1F06AA7B00F82666 /* Presenter.swift in Sources */,
@@ -450,6 +450,7 @@
 				98ED897A1F06AA3100F82666 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98ED897B1F06AA3100F82666 /* Build configuration list for PBXNativeTarget "ViperModelTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +459,7 @@
 				98ED897D1F06AA3100F82666 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
